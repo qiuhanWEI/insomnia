@@ -21,9 +21,10 @@ test.describe('Request param editor', () => {
     const kvTable = page.getByRole('listbox');
     const headerRow = kvTable.getByRole('option');
     await expect.soft(headerRow).toHaveCount(3);
-
+    // Click the Add button.
     await page.getByRole('button', { name: 'Add', exact: true }).click();
     const newHeaderRow = kvTable.getByRole('option');
+    // Should add a row.
     await expect.soft(newHeaderRow).toHaveCount(4);
   });
 
