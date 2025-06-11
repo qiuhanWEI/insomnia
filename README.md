@@ -17,4 +17,11 @@ Two new files are added here:
 [request-param-editor.test.ts](https://github.com/qiuhanWEI/insomnia/blob/weiq/playwright/packages/insomnia-smoke-test/tests/smoke/request-param-editor.test.ts)
 
 
-To run the Playwright cases, you can install the Playwright extension from VS Code marketplace. More details can be found [here](https://playwright.dev/docs/getting-started-vscode).
+**Playwright Test Result Reporting**
+- To run the Playwright cases, you can install the Playwright extension from VS Code marketplace. More details can be found [here](https://playwright.dev/docs/getting-started-vscode).
+
+- Run `npx playwright test tests/smoke/request-param-editor.test.ts` in `insomnia-smoke-test` directory.
+- All cases should be passed successfully.
+- Add `--reporter=html` to generate test report, it can be found in `playwright-report/index.html`.
+
+![test report](test-report.png)
